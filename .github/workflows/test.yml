@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: mkdir mytest1
-          
+          script: |
+            mkdir mytest2
       - name: Build the project
         run: go build -o icapeg
 
