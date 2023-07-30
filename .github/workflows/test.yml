@@ -20,4 +20,4 @@ jobs:
 
       - name: Build the project
         run: | 
-         mkdir /home/linux/test
+         mkdir test
