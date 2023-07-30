@@ -20,4 +20,4 @@ jobs:
 
       - name: Build the project
         run: | 
-          sudo mkdir -p test/test1
+          sudo mkdir mytest
