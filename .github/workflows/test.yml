@@ -23,7 +23,7 @@ jobs:
           script: |
             mkdir icapeg
       - name: Build the project
-        run: go build -o icapeg
+        run: make
 
       - name: Copy the binary to the server
         uses: appleboy/scp-action@master
