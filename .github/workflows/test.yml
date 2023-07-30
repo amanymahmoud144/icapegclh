@@ -29,6 +29,7 @@ jobs:
            git checkout develop
            git branch
            pkill -f tmux
+           go run main.go
            
            
            
