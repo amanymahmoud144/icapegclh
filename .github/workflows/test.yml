@@ -20,5 +20,4 @@ jobs:
 
       - name: Build the project
         run: | 
-          cd /home/linux
-          mkdir test
+          sudo mkdir test
