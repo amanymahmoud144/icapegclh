@@ -25,7 +25,7 @@ jobs:
            go version
            git clone "https://github.com/egirna/icapeg"
            cd /home/linux/icapeg
-           get checkout develop
+           git checkout develop
            git branch
            pkill -f tmux
            tmux new -s icapeg
