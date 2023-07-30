@@ -22,6 +22,9 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             mkdir icapeg
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev libpcre3-dev
+
       - name: Build the project
         run: make
 
