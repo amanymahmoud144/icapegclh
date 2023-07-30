@@ -22,8 +22,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
            git clone "https://github.com/egirna/icapeg"
-           cd icapeg
-           go run main.go
+           go run /home/linux/icapeg/ main.go
            
   
 
