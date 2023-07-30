@@ -23,13 +23,14 @@ jobs:
           script: |
            export PATH=$PATH:/usr/local/go/bin
            go version
+           sudo rm -r icapeg
            git clone "https://github.com/egirna/icapeg"
            cd /home/linux/icapeg
            git checkout develop
            git branch
            pkill -f tmux
-           tmux new -s icapeg
-           go run /home/linux/icapeg/ main.go
+ 
+   
            
          
            
