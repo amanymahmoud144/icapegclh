@@ -35,5 +35,5 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
           source: icapeg
-          target: /usr/local/go/src/icapeg
+          target: sudo /usr/local/go/src/icapeg
 
