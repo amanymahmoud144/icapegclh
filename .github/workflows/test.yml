@@ -34,8 +34,6 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: |
-           sudo mkdir /usr/local/go/src/icapeg
           source: icapeg
           target: /usr/local/go/src/icapeg
 
