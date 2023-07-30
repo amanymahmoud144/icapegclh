@@ -24,8 +24,6 @@ jobs:
            export PATH=$PATH:/usr/local/go/bin
            go version
            rm -r icapeg
-           pkill -f tmux
-           tmux new -s icapeg
            git clone "https://github.com/egirna/icapeg"
            cd /home/linux/icapeg
            git checkout develop
