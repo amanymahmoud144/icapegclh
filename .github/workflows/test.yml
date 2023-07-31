@@ -26,10 +26,10 @@ jobs:
            tmux new-session -s icapeg -d
            git clone "https://github.com/egirna/icapeg"
            cd /home/linux/icapeg
+           rm config.toml
            git checkout develop
            git branch 
-           go run /home/linux/icapeg / main.go
-           systemctl stop icapeg
+       
            
 
 
