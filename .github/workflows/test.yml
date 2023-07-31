@@ -24,7 +24,8 @@ jobs:
            export PATH=$PATH:/usr/local/go/bin
            go version
            tmux kill-server
-            tmux new-session -s linux -d
+           tmux start-server
+           tmux new-session -s linux -d
 
            
            
