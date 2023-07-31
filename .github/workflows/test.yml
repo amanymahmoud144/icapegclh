@@ -32,7 +32,7 @@ jobs:
            git checkout develop
            git branch
            go run /home/linux/icapeg/ main.go
-           kill -INT
+           kill -INT 
        
            
 
