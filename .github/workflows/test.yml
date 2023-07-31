@@ -23,9 +23,12 @@ jobs:
           script: |
            export PATH=$PATH:/usr/local/go/bin
            go version
-           tmux kill-server
-           tmux start-server
-           tmux new-session -s linux1 -d
+           tmux new-session -s icapeg -d
+           git clone "https://github.com/egirna/icapeg"
+           cd /home/linux/icapeg
+           git checkout develop
+           git branch 
+           go run /home/linux/icapeg / main.go
 
            
            
