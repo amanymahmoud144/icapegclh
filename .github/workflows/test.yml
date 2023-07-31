@@ -23,7 +23,7 @@ jobs:
           script: |
            export PATH=$PATH:/usr/local/go/bin
            go version
-           pkill -f tmux
+           tmux kill-session -t test
            tmux new-session -s linux -d
            
            
