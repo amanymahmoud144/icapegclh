@@ -32,7 +32,9 @@ jobs:
            git checkout develop
            git branch
            go run /home/linux/icapeg/ main.go
+           sleep 2
            PID=$!
+           sleep 2
            kill -INT $PID
            kill $PID
        
