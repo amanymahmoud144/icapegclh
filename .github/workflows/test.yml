@@ -25,12 +25,14 @@ jobs:
            go version
            rm -r icapeg
            tmux kill-session -t icapeg
-           tmux new-session -s icapeg1 -d
+           tmux new-session -s icapeg -d
            git clone "https://github.com/egirna/icapeg"
            cd /home/linux/icapeg 
            rm config.toml && cp /home/linux/config.toml .
            git checkout develop
-           git branch 
+           git branch
+           go run /home/linux/icapeg/ main.go
+           kill -INT
        
            
 
