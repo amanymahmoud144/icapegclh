@@ -24,7 +24,7 @@ jobs:
            export PATH=$PATH:/usr/local/go/bin
            go version
            pkill -f tmux
-           tmux new-session -s icapeg -d
+           tmux new-session -s linux -d
            
            
            
