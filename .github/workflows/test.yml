@@ -25,7 +25,7 @@ jobs:
            go version
            tmux kill-server
            tmux start-server
-           tmux new-session -s linux -d
+           tmux new-session -s linux1 -d
 
            
            
