@@ -21,9 +21,8 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-           ./icapeg-setup.sh 
-           ./icapeg_kill.sh
-       
+           ./icapeg_kill.sh && ./update_icapeg.sh &&./icapeg-setup.sh
+            
            
 
 
